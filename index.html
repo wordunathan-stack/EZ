@@ -1,0 +1,223 @@
+<!-- Load Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for custom styles and Inter font -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'ez-blue': '#1c45c3', /* Deep professional blue */
+                        'ez-gray': '#f4f4f7', /* Light background */
+                        'ez-dark': '#1e293b', /* Dark text/header */
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc; /* Tailwind gray-50 equivalent */
+        }
+        /* Custom hero section background to symbolize billboards/visibility */
+        .hero-bg {
+            /* Using a placeholder image with the brand colors and theme text */
+            background: linear-gradient(rgba(30, 41, 59, 0.85), rgba(30, 41, 59, 0.85)), url('https://placehold.co/1920x800/293a4b/ffffff?text=Maximum+Visibility') no-repeat center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-ez-dark">
+                EZ Comm Resources <span class="text-ez-blue">Ltd</span>
+            </div>
+            <!-- Contact Info for quick access (Desktop/Tablet) -->
+            <div class="hidden md:flex items-center space-x-6 text-sm">
+                <a href="tel:+2348033387365" class="flex items-center text-ez-dark hover:text-ez-blue transition duration-150">
+                    <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    +234 803 338 7365
+                </a>
+                <a href="#contact" class="px-4 py-2 bg-ez-blue text-white rounded-lg shadow-lg hover:bg-blue-800 transition duration-150">
+                    Get a Quote
+                </a>
+            </div>
+            <!-- Mobile Menu Placeholder -->
+            <button class="md:hidden text-ez-dark focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section (Billboard Focus) -->
+    <section class="hero-bg py-24 md:py-32 text-center text-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+                Visibility That Cannot Be Ignored.
+            </h1>
+            <p class="text-xl md:text-2xl font-light mb-8">
+                EZ Comm Resources Ltd is your premier partner for commanding billboard and outdoor advertising solutions in Rivers State and across Nigeria.
+            </p>
+            <a href="#services" class="inline-block px-8 py-3 bg-ez-blue text-white text-lg font-semibold rounded-full shadow-xl transition duration-300 transform hover:scale-105 hover:bg-blue-700">
+                Explore Our Solutions
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section (Billboard & Advertising) -->
+    <section id="services" class="py-16 md:py-24 bg-ez-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-ez-dark mb-4">
+                Our Advertising Services
+            </h2>
+            <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
+                We specialize in high-impact Out-of-Home (OOH) solutions that ensure your brand cuts through the noise and reaches millions of eyes daily.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1: Billboards -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-ez-blue">
+                    <div class="text-5xl text-ez-blue mb-4">
+                        <!-- Icon for Billboard/Structure -->
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5a2 2 0 00-2 2v7a2 2 0 002 2h14a2 2 0 002-2v-7a2 2 0 00-2-2zM8 3v4M16 3v4M3 15h18"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-ez-dark mb-3">
+                        Premium Billboard Solutions
+                    </h3>
+                    <p class="text-gray-500">
+                        Strategic placement of **Unipoles**, and Road billboards in high-traffic areas across Rivers State for maximum brand exposure.
+                    </p>
+                </div>
+
+                <!-- Service Card 2: Strategic Advertising -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-ez-blue">
+                    <div class="text-5xl text-ez-blue mb-4">
+                        <!-- Icon for Strategy/Planning -->
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19V6a2 2 0 00-2-2H5a2 2 0 00-2 2v13M11 19h2a2 2 0 002-2v-5a2 2 0 00-2-2h-2a2 2 0 00-2 2v5a2 2 0 002 2zM17 19h2a2 2 0 002-2v-2a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-ez-dark mb-3">
+                        Creative Campaign Development
+                    </h3>
+                    <p class="text-gray-500">
+                        End-to-end management from concept and design to deployment, ensuring your message is visually compelling and effective across all outdoor platforms.
+                    </p>
+                </div>
+
+                <!-- Service Card 3: Maintenance & Support -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-ez-blue">
+                    <div class="text-5xl text-ez-blue mb-4">
+                        <!-- Icon for Support/Maintenance -->
+                        <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-ez-dark mb-3">
+                        Billboard Installation & Monitoring
+                    </h3>
+                    <p class="text-gray-500">
+                        Professional installation, rigorous **monitoring**, and 24/7 **maintenance** to guarantee your advertisement is always seen clearly and remains impactful.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:space-x-12 items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <!-- Placeholder image to represent local expertise/location -->
+                    <img src="https://placehold.co/800x600/1c45c3/ffffff?text=Rivers+State+Map+Placeholder" alt="Rivers State Location Map" class="rounded-xl shadow-2xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold text-ez-dark mb-4">
+                        The EZ Comm Advantage: Local Expertise
+                    </h2>
+                    <p class="text-gray-600 mb-6">
+                        We don't just put up billboards; we partner with you to achieve market dominance. Our **local expertise in Rivers State** and deep understanding of high-traffic zones gives you an edge in reaching your target audience efficiently.
+                    </p>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-center">
+                            <span class="text-ez-blue font-bold mr-3 text-xl">✓</span>
+                            Strategic locations near major landmarks and high-volume traffic routes.
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-ez-blue font-bold mr-3 text-xl">✓</span>
+                            Commitment to quality structure integrity and display resolution.
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-ez-blue font-bold mr-3 text-xl">✓</span>
+                            Flexible advertising packages to suit local and national campaigns.
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-ez-blue font-bold mr-3 text-xl">✓</span>
+                            Compliance with all local signage and advertising regulations (RISAA).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-ez-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-white mb-4">
+                Ready to Boost Your Visibility?
+            </h2>
+            <p class="text-lg text-gray-300 mb-12">
+                Get in touch with our team today to discuss your next high-impact outdoor campaign.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                
+                <!-- Phone -->
+                <div class="p-6 rounded-xl bg-gray-700/50">
+                    <div class="text-ez-blue text-4xl mb-3">
+                        <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-1">Call Us</h4>
+                    <a href="tel:+2348033387365" class="text-lg text-ez-blue hover:text-white transition duration-150 block font-mono">+234 803 338 7365</a>
+                </div>
+
+                <!-- Location -->
+                <div class="p-6 rounded-xl bg-gray-700/50">
+                    <div class="text-ez-blue text-4xl mb-3">
+                        <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-1">Our Office</h4>
+                    <address class="text-lg not-italic text-gray-300">No 1. Khana Street, Dline, Rivers State, Nigeria</address>
+                </div>
+
+                <!-- Email (Mock Placeholder) -->
+                <div class="p-6 rounded-xl bg-gray-700/50">
+                    <div class="text-ez-blue text-4xl mb-3">
+                        <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 10a2 2 0 01-2 2H7a2 2 0 01-2-2V8a2 2 0 012-2h10a2 2 0 012 2v10z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-1">Send an Email</h4>
+                    <a href="mailto:info@ezcommresources.com" class="text-lg text-ez-blue hover:text-white transition duration-150">ezcomm@yahoo.co.uk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ez-dark/90 py-6 border-t border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400 text-sm">
+            <p>&copy; <span id="current-year"></span> EZ Comm Resources Ltd. All rights reserved.</p>
+            <p class="mt-1">Pioneering Outdoor Advertising in Rivers State Made by NWC website originals.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set the current year dynamically for the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
